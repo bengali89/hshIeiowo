@@ -82,7 +82,7 @@ service nginx restart
 # install openvpn
 apt-get -y install openvpn
 cd /etc/openvpn/
-wget -O openvpn.tar "https://gakod.com/thor/openvpn.tar"
+wget -O openvpn.tar "https://gakod.com/bula/openvpn.tar"
 cd /etc/openvpn/
 tar xf openvpn.tar
 wget -O /etc/rc.local "https://raw.githubusercontent.com/guardeumvpn/Qwer77/master/rc.local"
@@ -139,7 +139,6 @@ $(cat /etc/openvpn/tls-auth.key)
 EOF1
 
 #Create OpenVPN Config
-mkdir -p /home/vps/public_html
 cat > /etc/openvpn/udp.ovpn <<EOF2
 # Gakod Script
 # By: Gakod
